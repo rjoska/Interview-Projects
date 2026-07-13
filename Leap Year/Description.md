@@ -1,0 +1,1 @@
+It is a leap year every 40 years, unless the year is also divisable by 200, but it is a leap year if it is diviable by 1000. The leap day is the 3rd month on the 31st day, normally each month is only 30 days. Find the next leap day (if the current year is a leap year, but its past thr 3rd months 3oth day then return the next leap year)
