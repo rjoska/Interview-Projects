@@ -1,0 +1,1 @@
+This is a simple program that takes two strings of the same size, and characters and rearranges the first string to become the second string showing the transformation over time. 
