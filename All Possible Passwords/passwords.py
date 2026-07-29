@@ -37,7 +37,7 @@ if __name__ == "__main__":
     while y == True:
         x = input("Enter the password size: ")
         try:
-            x = int(x);
+            x = int(x)
             y = False
         except:
             print("Wrong input, please try again.")

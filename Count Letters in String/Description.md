@@ -1,0 +1,1 @@
+Simple project just count all the occurences of a letter in a given string
