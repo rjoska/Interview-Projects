@@ -32,8 +32,12 @@ def find_max_optimal(compute_loads, k):
         # 2. Maintain the monotonic queue for the minimum
         # Remove any indices from the back whose values are >= the current value.
         # They can never be the minimum as long as the current, smaller value is in the window.
+        print(i)
         while min_queue and compute_loads[min_queue[-1]] >= compute_loads[i]:
+            print(min_queue)
             min_queue.pop()
+            print("Popped")
+            print(min_queue)
         
         # Add the current index
         min_queue.append(i)
@@ -42,6 +46,7 @@ def find_max_optimal(compute_loads, k):
         if i >= k - 1:
             # The minimum value is always at the front of the queue
             current_min = compute_loads[min_queue[0]]
+            print("current min: " + str(current_min) + " for i = " + str(i))
             
             # Calculate and update max score
             max_score = max(max_score, current_sum * current_min)
@@ -59,6 +64,7 @@ def find_max_optimal(compute_loads, k):
 
 # Test the optimized code
 print(find_max_optimal([2, 1, 3, 4, 5, 2], 3))  # Output: 36
+print(find_max_optimal([1, 2, 2, 2, 2, 3, 4, 5, 2], 3))
 
 compute_loads = [2, 1, 3, 4, 5, 2]
 size = 3
